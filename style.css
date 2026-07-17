@@ -1,8 +1,8 @@
 /* ==========================================================================
-   GEORGIAN PUB KUTAISI - PREMIUM STYLE SHEET[cite: 3]
+   GEORGIAN PUB KUTAISI - PREMIUM STYLE SHEET
    ========================================================================== */
 
-/* --- Design Tokens & CSS Variables ---[cite: 3] */
+/* --- Design Tokens & CSS Variables --- */
 :root {
   --bg-primary: #0f0f11;
   --bg-secondary: #161619;
@@ -39,11 +39,17 @@
   --border-radius-lg: 24px;
 }
 
-/* --- Base & Reset Rules ---[cite: 3] */
+/* --- Base & Reset Rules --- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 html {
@@ -55,11 +61,15 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   line-height: 1.6;
 }
 
-/* --- Language Switching Utility (GE / EN / RU) ---[cite: 3] */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Language Switching Utility (GE / EN / RU) --- */
 body.lang-ge .en-text  { display: none !important; }
 body.lang-ge .ru-text  { display: none !important; }
 body.lang-en .ge-text  { display: none !important; }
@@ -67,12 +77,12 @@ body.lang-en .ru-text  { display: none !important; }
 body.lang-ru .ge-text  { display: none !important; }
 body.lang-ru .en-text  { display: none !important; }
 
-/* Custom Serif Classes[cite: 3] */
+/* Custom Serif Classes */
 .font-serif {
   font-family: var(--font-serif) !important;
 }
 
-/* Custom Scrollbar[cite: 3] */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -88,7 +98,7 @@ body.lang-ru .en-text  { display: none !important; }
   background: var(--accent-gold);
 }
 
-/* --- Common Layout Elements ---[cite: 3] */
+/* --- Common Layout Elements --- */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -127,7 +137,7 @@ section {
   margin: 20px auto 0;
 }
 
-/* --- Buttons & Typography ---[cite: 3] */
+/* --- Buttons & Typography --- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -196,7 +206,7 @@ section {
   text-shadow: 0 0 10px var(--accent-gold-glow);
 }
 
-/* --- Floating Header ---[cite: 3] */
+/* --- Floating Header --- */
 .header {
   position: fixed;
   top: 0;
@@ -258,7 +268,7 @@ section {
   margin-top: 2px;
 }
 
-/* Desktop Menu[cite: 3] */
+/* Desktop Menu */
 .nav-menu ul {
   display: flex;
   list-style: none;
@@ -300,7 +310,7 @@ section {
   gap: 20px;
 }
 
-/* Language Switcher[cite: 3] */
+/* Language Switcher */
 .lang-switcher {
   display: flex;
   background: rgba(255, 255, 255, 0.05);
@@ -346,7 +356,7 @@ section {
   transition: all var(--transition-fast);
 }
 
-/* --- Hero Section ---[cite: 3] */
+/* --- Hero Section --- */
 .hero {
   height: 100vh;
   min-height: 700px;
@@ -489,7 +499,7 @@ section {
   60% { transform: translateY(-5px); }
 }
 
-/* --- About & Concept Section ---[cite: 3] */
+/* --- About & Concept Section --- */
 .about {
   background-color: var(--bg-secondary);
 }
@@ -603,7 +613,7 @@ section {
   border-color: var(--accent-gold);
 }
 
-/* --- Interactive Menu Section ---[cite: 3] */
+/* --- Interactive Menu Section --- */
 .menu-section {
   background-color: var(--bg-primary);
   background-image: radial-gradient(circle at 50% 30%, rgba(217, 119, 6, 0.04) 0%, transparent 70%);
@@ -814,7 +824,7 @@ section {
   color: var(--text-muted);
 }
 
-/* Custom Tag Themes[cite: 3] */
+/* Custom Tag Themes */
 .tag-gold {
   background: rgba(217, 119, 6, 0.08);
   border: 1px solid rgba(217, 119, 6, 0.3);
@@ -851,7 +861,39 @@ section {
   box-shadow: 0 0 10px rgba(159, 18, 57, 0.15);
 }
 
-/* --- Events & Live Music Section ---[cite: 3] */
+.menu-subcategory-title {
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--text-gold);
+  margin: 60px 0 35px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: var(--font-serif);
+  width: 100%;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-panel .menu-subcategory-title {
+  grid-column: 1 / -1;
+}
+
+.menu-subcategory-title::before,
+.menu-subcategory-title::after {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-gold), transparent);
+}
+
+.menu-subcategory-title:first-of-type {
+  margin-top: 0;
+}
+
+/* --- Events & Live Music Section --- */
 .events-section {
   background-color: var(--bg-secondary);
   overflow: hidden;
@@ -943,7 +985,7 @@ section {
   font-size: 0.9rem;
 }
 
-/* --- Guest Reviews Section ---[cite: 3] */
+/* --- Guest Reviews Section --- */
 .reviews-section {
   background-color: var(--bg-primary);
 }
@@ -1049,7 +1091,7 @@ section {
   transform: scale(1.2);
 }
 
-/* --- Booking Reservation Section ---[cite: 3] */
+/* --- Booking Reservation Section --- */
 .reservation-section {
   background-color: var(--bg-secondary);
 }
@@ -1186,7 +1228,7 @@ section {
   display: block;
 }
 
-/* --- Contact & Custom Vector Map Section ---[cite: 3] */
+/* --- Contact & Custom Vector Map Section --- */
 .contact-section {
   background-color: var(--bg-primary);
 }
@@ -1266,7 +1308,7 @@ section {
   position: relative;
 }
 
-/* Styled Vector Map Design[cite: 3] */
+/* Styled Vector Map Design */
 .vector-map {
   width: 100%;
   height: 100%;
@@ -1357,7 +1399,7 @@ section {
   left: 15%;
 }
 
-/* Pulsing Location Pin[cite: 3] */
+/* Pulsing Location Pin */
 .map-pin-pulse {
   position: absolute;
   top: 42%;
@@ -1539,7 +1581,7 @@ section {
   color: var(--text-gold);
 }
 
-/* --- Toast System ---[cite: 3] */
+/* --- Toast System --- */
 .toast-container {
   position: fixed;
   bottom: 24px;
@@ -1582,7 +1624,7 @@ section {
   color: var(--text-main);
 }
 
-/* --- Pitch Widget (Floating offer for local business) ---[cite: 3] */
+/* --- Pitch Widget --- */
 .pitch-widget {
   position: fixed;
   bottom: 24px;
@@ -1673,39 +1715,7 @@ section {
   gap: 10px;
 }
 
-.menu-subcategory-title {
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: var(--text-gold);
-  margin: 60px 0 35px 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-family: var(--font-serif);
-  width: 100%;
-  grid-column: 1 / -1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.menu-panel .menu-subcategory-title {
-  grid-column: 1 / -1;
-}
-
-.menu-subcategory-title::before,
-.menu-subcategory-title::after {
-  content: '';
-  flex-grow: 1;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border-gold), transparent);
-}
-
-.menu-subcategory-title:first-of-type {
-  margin-top: 0;
-}
-
-/* --- Responsive Media Queries ---[cite: 3] */
+/* --- Responsive Media Queries --- */
 
 @media (max-width: 1024px) {
   section {
@@ -1784,7 +1794,7 @@ section {
     gap: 40px;
   }
 
-  /* Header Mobile Toggle and Side Menu Drawer[cite: 3] */
+  /* Header Mobile Toggle and Side Menu Drawer */
   .btn-header-book {
     display: none;
   }
@@ -1819,7 +1829,7 @@ section {
     font-size: 1.1rem;
   }
   
-  /* Menu Hamburger Animation[cite: 3] */
+  /* Menu Hamburger Animation */
   .mobile-toggle.open span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
@@ -1902,25 +1912,4 @@ section {
   .hero-buttons .btn {
     width: 100%;
   }
-}
-
-/* Prevent horizontal scrolling globally */
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Ensure all elements calculate their width correctly including padding */
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-/* Force images and large elements to stay within screen boundaries */
-img, video, iframe {
-    max-width: 100%;
-    height: auto;
 }

@@ -48,7 +48,7 @@ function initMobileMenu() {
   document.addEventListener('click', (e) => {
     if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && e.target !== mobileToggle) {
       mobileToggle.classList.remove('open');
-      navMenu.classList.open = false; // Safe removal
+      navMenu.classList.open = false;
       navMenu.classList.remove('open');
     }
   });
