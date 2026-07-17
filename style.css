@@ -62,6 +62,8 @@ html {
 
 body {
   line-height: 1.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 img, video, iframe {
@@ -115,6 +117,7 @@ section {
 .section-header {
   text-align: center;
   margin-bottom: 60px;
+  padding: 0 10px;
 }
 
 .section-title {
@@ -746,7 +749,6 @@ section {
   margin-bottom: 14px;
   gap: 15px;
   width: 100%;
-  overflow: hidden;
 }
 
 .menu-item-title {
@@ -1715,7 +1717,7 @@ section {
   gap: 10px;
 }
 
-/* --- Responsive Media Queries --- */
+/* --- Responsive Media Queries & Mobile Overrides --- */
 
 @media (max-width: 1024px) {
   section {
@@ -1861,8 +1863,23 @@ section {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px; /* Safeguard against viewport clipping */
+  }
+
   .section-title {
     font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .stat-boxes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
   
   .hero-title {
@@ -1870,7 +1887,7 @@ section {
   }
   
   .hero-content {
-    padding: 32px 20px;
+    padding: 32px 16px;
   }
   
   .footer-grid {
@@ -1882,6 +1899,40 @@ section {
     flex-direction: column;
     text-align: center;
   }
+
+  /* Structural fixes for menu items/prices preventing text clippings */
+  .menu-item {
+    padding: 20px 16px;
+  }
+
+  .menu-item-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .menu-item-title {
+    font-size: 1.15rem;
+    flex-grow: 1;
+    display: inline-block;
+    max-width: calc(100% - 90px);
+    word-wrap: break-word;
+  }
+
+  .menu-item-title::after {
+    display: none; /* Strip dotted decoration line to allow proper text scaling */
+  }
+
+  .menu-item-price {
+    font-size: 1.15rem;
+    white-space: nowrap;
+    margin-left: auto;
+    background: rgba(217, 119, 6, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(217, 119, 6, 0.2);
+  }
 }
 
 @media (max-width: 480px) {
@@ -1891,16 +1942,16 @@ section {
   }
   
   .hero-content {
-    padding: 24px 16px;
+    padding: 24px 12px;
     border-radius: var(--border-radius-md);
   }
   
   .hero-title {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
   }
   
   .hero-tagline {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     margin-bottom: 24px;
   }
   
@@ -1911,5 +1962,26 @@ section {
   
   .hero-buttons .btn {
     width: 100%;
+  }
+
+  .stat-boxes {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .menu-item-header {
+    align-items: flex-start;
+  }
+
+  .menu-item-title {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .menu-item-price {
+    margin-left: 0;
+    margin-top: 4px;
   }
 }
