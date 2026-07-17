@@ -1903,3 +1903,24 @@ section {
     width: 100%;
   }
 }
+
+/* Prevent horizontal scrolling globally */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure all elements calculate their width correctly including padding */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Force images and large elements to stay within screen boundaries */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
