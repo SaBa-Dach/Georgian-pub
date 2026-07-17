@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ქართული პაბი • Georgian Pub | Kutaisi</title>
+  <meta name="description" content="ავთენტური ქართული გემო და მყუდრო პაბის ატმოსფერო ქუთაისის ცენტრში. Authentic Georgian flavors meet cozy pub atmosphere in the heart of Kutaisi.">
+  <link rel="icon" href="./assets/logo.png">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Cinzel for headers, Noto Serif Georgian for Georgian text, Outfit for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Noto+Serif+Georgian:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css?v=1.4">
+</head>
+<body class="lang-ge">
+
+  <!-- Floating Nav Header -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#home" class="logo-area">
+        <img src="assets/logo.png" alt="Georgian Pub Logo" class="nav-logo">
+        <div class="logo-text">
+          <span class="ge-text font-serif">ქართული პაბი</span>
+          <span class="en-text font-serif">Georgian Pub</span>
+          <span class="ru-text font-serif">Грузинский Паб</span>
+          <small class="location-badge">KUTAISI</small>
+        </div>
+      </a>
+      
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#home" class="nav-link active"><span class="ge-text">მთავარი</span><span class="en-text">Home</span><span class="ru-text">Главная</span></a></li>
+          <li><a href="#about" class="nav-link"><span class="ge-text">ჩვენ შესახებ</span><span class="en-text">Concept</span><span class="ru-text">О нас</span></a></li>
+          <li><a href="#menu" class="nav-link"><span class="ge-text">მენიუ</span><span class="en-text">Menu</span><span class="ru-text">Меню</span></a></li>
+          <li><a href="#events" class="nav-link"><span class="ge-text">ღონისძიებები</span><span class="en-text">Events</span><span class="ru-text">Мероприятия</span></a></li>
+          <li><a href="#reservation" class="nav-link"><span class="ge-text">დაჯავშნა</span><span class="en-text">Reservation</span><span class="ru-text">Бронь</span></a></li>
+          <li><a href="#contact" class="nav-link"><span class="ge-text">კონტაქტი</span><span class="en-text">Contact</span><span class="ru-text">Контакты</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="ge">GE</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+        
+        <!-- Book Table CTA -->
+        <a href="#reservation" class="btn btn-primary btn-sm btn-header-book">
+          <span class="ge-text">მაგიდის დაჯავშნა</span>
+          <span class="en-text">Book Table</span>
+          <span class="ru-text">Забронировать</span>
+        </a>
+
+        <!-- Hamburger Icon -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg" style="background-image: linear-gradient(rgba(18, 18, 20, 0.7), rgba(18, 18, 20, 0.95)), url('assets/hero_bg.png');"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-beer-mugs-healthy gold-glow"></i>
+          <span class="ge-text">ტრადიცია & მყუდრო გარემო</span>
+          <span class="en-text">Tradition & Cozy Atmosphere</span>
+          <span class="ru-text">Традиции & Уютная Атмосфера</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="ge-text font-serif">ქართული პაბი</span>
+          <span class="en-text font-serif">Georgian Pub</span>
+          <span class="ru-text font-serif">Грузинский Паб</span>
+        </h1>
+        
+        <p class="hero-tagline">
+          <span class="ge-text">ავთენტური ქართული საოჯახო რეცეპტებით მომზადებული კერძები, საუკეთესო ადგილობრივი კრაფტ ლუდი და ნამდვილი იმერული მასპინძლობა ქუთაისის შუაგულში.</span>
+          <span class="en-text">Authentic family-recipe dishes, finest local craft beers, and true Imeretian hospitality in the absolute heart of historic Kutaisi.</span>
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary">
+            <span class="ge-text">მენიუს ნახვა</span>
+            <span class="en-text">View Menu</span>
+            <span class="ru-text">Меню</span>
+            <i class="fa-solid fa-utensils"></i>
+          </a>
+          <a href="#reservation" class="btn btn-secondary">
+            <span class="ge-text">დაჯავშნე მაგიდა</span>
+            <span class="en-text">Book a Table</span>
+            <span class="ru-text">Забронировать Столик</span>
+            <i class="fa-solid fa-calendar-check"></i>
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <div class="feat-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span class="ge-text">საუკეთესო ხინკალი ქალაქში</span>
+            <span class="en-text">Best Khinkali in Town</span>
+            <span class="ru-text">Лучшие Хинкали в городе</span>
+          </div>
+          <div class="feat-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span class="ge-text">ცოცხალი მუსიკა</span>
+            <span class="en-text">Live Folk Music</span>
+            <span class="ru-text">Живая Музыка</span>
+          </div>
+          <div class="feat-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span class="ge-text">სპორტული ტრანსლაციები</span>
+            <span class="en-text">Big Screen Sports</span>
+            <span class="ru-text">Спорт на Большом Экране</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-down">
+      <a href="#about"><i class="fa-solid fa-angles-down"></i></a>
+    </div>
+  </section>
+
+  <!-- About / Concept Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="ge-text font-serif">ჩვენი კონცეფცია</span>
+          <span class="en-text font-serif">Our Concept</span>
+          <span class="ru-text font-serif">Наша Концепция</span>
+        </h2>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-info">
+          <h3 class="about-subtitle">
+            <span class="ge-text">სადაც ქართული სუფრა და პაბის კულტურა ერთიანდება</span>
+            <span class="en-text">Where Georgian Feast Meets Pub Culture</span>
+            <span class="ru-text">Где Грузинская Кухня встречается с Культурой Паба</span>
+          </h3>
+          <p class="about-text">
+            <span class="ge-text">„ქართული პაბი“ შეიქმნა იმისთვის, რომ გააერთიანოს ორი საუკეთესო სამყარო: მდიდარი ქართული კულინარიული მემკვიდრეობა და მყუდრო, მეგობრული ლუდის ბარის ატმოსფერო. ჩვენ გვჯერა, რომ კარგი ლუდი საუკეთესო ქართულ კერძებთან ერთად განსაკუთრებულ გამოცდილებას ქმნის.</span>
+            <span class="en-text">“Georgian Pub” was created to unite the best of two worlds: Georgia’s rich culinary heritage and the warm, friendly atmosphere of a classic tavern. We believe that premium craft beer paired with authentic, hearty Georgian dishes creates an unforgettable experience.</span>
+          </p>
+          <p class="about-text">
+            <span class="ge-text">ჩვენი მყუდრო ხის ინტერიერი, აგურის კედლები, ძველებური განათება და ცოცხალი მუსიკის საღამოები იდეალურ გარემოს ქმნის მეგობრებთან ერთად დროის გასატარებლად, სპორტული თამაშების საყურებლად ან უბრალოდ უგემრიელესი ცხელი ხინკლის დასაგემოვნებლად.</span>
+            <span class="en-text">Our cozy wooden interior, exposed brick walls, warm lighting, and weekly live music sessions provide the perfect setting to hang out with friends, catch the big game, or just enjoy a steaming hot tray of hand-rolled khinkali.</span>
+          </p>
+
+          <div class="stat-boxes">
+            <div class="stat-box">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">
+                <span class="ge-text">ნატურალური პროდუქტი</span>
+                <span class="en-text">Fresh Ingredients</span>
+                <span class="ru-text">Свежие Продукты</span>
+              </span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">15+</span>
+              <span class="stat-label">
+                <span class="ge-text">ლუდის სახეობა</span>
+                <span class="en-text">Beer Selections</span>
+                <span class="ru-text">Сорта Пива</span>
+              </span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">4.8</span>
+              <span class="stat-label">
+                <span class="ge-text">ვარსკვლავი</span>
+                <span class="en-text">Google Rating</span>
+                <span class="ru-text">Оценка Google</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="image-wrapper image-stack-top">
+            <img src="assets/mtsvadi_wine.png" alt="Traditional Georgian Grill Mtsvadi and Wine" class="rounded-img">
+          </div>
+          <div class="image-wrapper image-stack-bottom">
+            <img src="assets/khinkali_beer.png" alt="Georgian Khinkali and Draft Beer" class="rounded-img">
+          </div>
+        </div>
+
+        <!-- Mobile-only single image -->
+        <div class="about-visual-mobile">
+          <img src="assets/khinkali_beer.png" alt="Georgian Khinkali and Beer">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="ge-text font-serif">გამორჩეული მენიუ</span>
+          <span class="en-text font-serif">Signature Menu</span>
+          <span class="ru-text font-serif">Наше Меню</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="ge-text">დააგემოვნეთ ნამდვილი ქართული კერძები და საუკეთესო სასმელები</span>
+          <span class="en-text">Taste authentic Georgian dishes and premium pub drinks</span>
+          <span class="ru-text">Попробуйте настоящие грузинские блюда и лучшие напитки</span>
+        </p>
+        <div class="accent-line"></div>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="menu-tabs">
+        <button class="menu-tab-btn active" data-tab="beers">
+          <i class="fa-solid fa-wine-glass"></i>
+          <span class="ge-text">სასმელები</span>
+          <span class="en-text">Drinks Menu</span>
+          <span class="ru-text">Напитки</span>
+        </button>
+        <button class="menu-tab-btn" data-tab="khinkali">
+          <i class="fa-solid fa-circle-dot"></i>
+          <span class="ge-text">ხინკალი & ცომეული</span>
+          <span class="en-text">Khinkali & Pastries</span>
+          <span class="ru-text">Хинкали & Выпечка</span>
+        </button>
+        <button class="menu-tab-btn" data-tab="meats">
+          <i class="fa-solid fa-fire-burner"></i>
+          <span class="ge-text">ხორცი & გრილი</span>
+          <span class="en-text">Meats & Grill</span>
+          <span class="ru-text">Мясо & Гриль</span>
+        </button>
+        <button class="menu-tab-btn" data-tab="snacks">
+          <i class="fa-solid fa-cheese"></i>
+          <span class="ge-text">სნექები</span>
+          <span class="en-text">Pub Snacks</span>
+          <span class="ru-text">Закуски</span>
+        </button>
+      </div>
+
+      <!-- Menu Panels -->
+      <div class="menu-panels">
+
+        <!-- Drinks Menu -->
+        <div class="menu-panel active" id="beers">
+          
+          <!-- Category 1: Beer & Wine -->
+          <div class="menu-subcategory-title">
+            <span class="ge-text">ლუდი & ღვინო</span>
+            <span class="en-text">Beer & Wine</span>
+            <span class="ru-text">Пиво & Вино</span>
+          </div>
+          <div class="menu-grid">
+            <!-- NATAKHTARI -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ნატახტარი</span>
+                  <span class="en-text">Natakhtari (Draft/Bottle)</span>
+                  <span class="ru-text">Натахтари (разливное/бутылочное)</span>
+                </h4>
+                <span class="menu-item-price">₾ 5.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ყველაზე პოპულარული ქართული ლაგერი.</span>
+                <span class="en-text">Georgia's iconic crisp golden lager.</span>
+                <span class="ru-text">Самое популярное и узнаваемое грузинское светлое пиво.</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Local Beer</span>
+                <span class="tag">0.5L</span>
+              </div>
+            </div>
+            
+            <!-- EFFES -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ეფესი</span>
+                  <span class="en-text">Efes Lager</span>
+                  <span class="ru-text">Эфес</span>
+                </h4>
+                <span class="menu-item-price">₾ 7.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">პრემიუმ კლასის ევროპული ლაგერი.</span>
+                <span class="en-text">Premium light Pilsner style import.</span>
+                <span class="ru-text">Светлый европейский пильзнер премиум-класса.</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Import</span>
+                <span class="tag">0.5L</span>
+              </div>
+            </div>
+
+            <!-- WHITE WINE TSINANDALI -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">წინანდალი (მშრალი)</span>
+                  <span class="en-text">Tsinandali White (Dry)</span>
+                  <span class="ru-text">Цинандали (сухое)</span>
+                </h4>
+                <span class="menu-item-price">₾ 12.00 / 40.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">კლასიკური ქართული ადგილწარმოშობის მშრალი თეთრი ღვინო (ჭიქა / ბოთლი).</span>
+                <span class="en-text">Classic Georgian dry white wine from Kakheti (Glass / Bottle).</span>
+                <span class="ru-text">Классическое грузинское белое сухое вино из Кахетии (бокал / бутылка).</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">White Wine</span>
+                <span class="tag">Kakheti</span>
+              </div>
+            </div>
+
+            <!-- WHITE WINE KISI -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ქისი (მშრალი)</span>
+                  <span class="en-text">Kisi White (Dry)</span>
+                  <span class="ru-text">Киси (сухое)</span>
+                </h4>
+                <span class="menu-item-price">₾ 14.00 / 50.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">არომატული და ტანიანი ქარვისფერი/თეთრი მშრალი ღვინო (ჭიქა / ბოთლი).</span>
+                <span class="en-text">Aromatic Kakhetian white dry wine with amber undertones (Glass / Bottle).</span>
+                <span class="ru-text">Ароматное сухое вино с легким янтарным оттенком (бокал / бутылка).</span>
+              </p>
+            </div>
+
+            <!-- WHITE WINE TVISHI -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ტვიში (ნახევრად ტკბილი)</span>
+                  <span class="en-text">Tvishi White (Semi-Sweet)</span>
+                  <span class="ru-text">Твиши (полусладкое)</span>
+                </h4>
+                <span class="menu-item-price">₾ 15.00 / 75.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ნახევრად ტკბილი თეთრი ღვინო ლეჩხუმის რეგიონიდან, გამოირჩევა ნაზი ხილის ტონებით.</span>
+                <span class="en-text">Famous semi-sweet white wine from Racha-Lechkhumi region (Glass / Bottle).</span>
+                <span class="ru-text">Знаменитое нежное полусладкое белое вино из Лечхуми (бокал / бутылка).</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Semi-Sweet</span>
+              </div>
+            </div>
+
+            <!-- WHITE WINE ALAZANI -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ალაზნის ველი (თეთრი, ნახ. ტკბილი)</span>
+                  <span class="en-text">Alazani Valley White (Semi-Sweet)</span>
+                  <span class="ru-text">Алазанская Долина (белое полусладкое)</span>
+                </h4>
+                <span class="menu-item-price">₾ 10.00 / 30.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">მსუბუქი ხილის არომატების მქონე თეთრი ნახევრად ტკბილი ღვინო.</span>
+                <span class="en-text">Light and fresh Kakhetian semi-sweet white wine (Glass / Bottle).</span>
+                <span class="ru-text">Легкое кахетинское белое полусладкое вино с фруктовыми нотами (бокал / бутылка).</span>
+              </p>
+            </div>
+
+            <!-- RED WINE MUKUZANI -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">მუკუზანი (წითელი, მშრალი)</span>
+                  <span class="en-text">Mukuzani Red (Dry)</span>
+                  <span class="ru-text">Мукузани (красное сухое)</span>
+                </h4>
+                <span class="menu-item-price">₾ 15.00 / 60.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">მუხაში დაძველებული სხეულიანი წითელი მშრალი ღვინო.</span>
+                <span class="en-text">Premium oak-aged full-bodied dry red wine from Saperavi grapes (Glass / Bottle).</span>
+                <span class="ru-text">Выдержанное в дубовых бочках насыщенное сухое красное вино (бокал / бутылка).</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Red Wine</span>
+                <span class="tag">Oak Aged</span>
+              </div>
+            </div>
+
+            <!-- RED WINE SAPERAVI -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">საფერავი (წითელი, მშრალი)</span>
+                  <span class="en-text">Saperavi Red (Dry)</span>
+                  <span class="ru-text">Саперави (красное сухое)</span>
+                </h4>
+                <span class="menu-item-price">₾ 12.00 / 45.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">კლასიკური წითელი მშრალი ღვინო, გამოხატული კენკრის არომატებით.</span>
+                <span class="en-text">Classic Kakhetian dry red wine with deep blackberry tones (Glass / Bottle).</span>
+                <span class="ru-text">Традиционное сухое красное вино с яркими тонами спелых ягод (бокал / бутылка).</span>
+              </p>
+            </div>
+
+            <!-- RED WINE KHVANCHKARA -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ხვანჭკარა (წითელი, ნახ. ტკბილი)</span>
+                  <span class="en-text">Khvanchkara Red (Semi-Sweet)</span>
+                  <span class="ru-text">Хванчкара (красное полусладкое)</span>
+                </h4>
+                <span class="menu-item-price">₾ 20.00 / 85.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">უნიკალური წითელი ნახევრად ტკბილი ღვინო რაჭის რეგიონიდან (ალექსანდროული & მუჯურეთული).</span>
+                <span class="en-text">Exclusive Kakhetian/Rachan red semi-sweet wine from unique grapes (Glass / Bottle).</span>
+                <span class="ru-text">Изысканное природно-полусладкое красное вино из легендарного региона Рача (бокал / бутылка).</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Legendary</span>
+              </div>
+            </div>
+
+            <!-- RED WINE KINDZMARAULI -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ქინძმარაული (წითელი, ნახ. ტკბილი)</span>
+                  <span class="en-text">Kindzmarauli Red (Semi-Sweet)</span>
+                  <span class="ru-text">Киндзмараули (красное полусладкое)</span>
+                </h4>
+                <span class="menu-item-price">₾ 14.00 / 55.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ყველასთვის საყვარელი წითელი ნახევრად ტკბილი ღვინო ხავერდოვანი გემოთი.</span>
+                <span class="en-text">Naturally semi-sweet Kakhetian red wine with velvet finish (Glass / Bottle).</span>
+                <span class="ru-text">Бархатистое и гармоничное красное полусладкое вино из винограда Саперави (бокал / бутылка).</span>
+              </p>
+            </div>
+
+            <!-- HOMEMADE WINE -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ოჯახის ღვინო (წითელი ან თეთრი)</span>
+                  <span class="en-text">Homemade Wine (Red or White)</span>
+                  <span class="ru-text">Домашнее вино (красное или белое)</span>
+                </h4>
+                <span class="menu-item-price">₾ 6.00 / 22.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ადგილობრივი ოჯახური რეცეპტით დამზადებული ნატურალური ღვინო (ჭიქა / 1 ლიტრი დოქით).</span>
+                <span class="en-text">Fresh, natural homemade craft wine directly from local micro-zones (Glass / 1L Pitcher).</span>
+                <span class="ru-text">Свежее домашнее кувшинное вино из местных сортов (бокал / кувшин 1 л).</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">House Special</span>
+              </div>
+            </div>
+
+            <!-- SPARKLING WINE -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ცქრიალა ღვინო (თეთრი / როზე)</span>
+                  <span class="en-text">Sparkling Wine (White / Rose)</span>
+                  <span class="ru-text">Игристое вино (белое / розе)</span>
+                </h4>
+                <span class="menu-item-price">₾ 35.00 / 40.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ცქრიალა ნახევრად ტკბილი თეთრი (35.00) ან საფირმო ცქრიალა როზე ბოთლით (40.00).</span>
+                <span class="en-text">Bottled sparkling white semi-sweet (35.00) or premium sparkling Rose (40.00).</span>
+                <span class="ru-text">Игристое белое полусладкое (35.00) или ароматное розовое в бутылке (40.00).</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Category 2: Cocktails & Liqueurs -->
+          <div class="menu-subcategory-title">
+            <span class="ge-text">კოქტეილები & ლიქიორები</span>
+            <span class="en-text">Cocktails & Liqueurs</span>
+            <span class="ru-text">Коктейли & Ликеры</span>
+          </div>
+          <div class="menu-grid">
+            <!-- MOJITO -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">მოხიტო</span>
+                  <span class="en-text">Mojito</span>
+                  <span class="ru-text">Мохито</span>
+                </h4>
+                <span class="menu-item-price">₾ 18.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">რომი, ლაიმი, პიტნა, შაქრის ვაჟინი, გაზირებული წყალი.</span>
+                <span class="en-text">White rum, fresh lime, mint leaves, simple syrup, soda water.</span>
+                <span class="ru-text">Светлый ром, лайм, мята, сахарный сироп, газированная вода.</span>
+              </p>
+            </div>
+
+            <!-- COSMOPOLITAN -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">კოსმოპოლიტენი</span>
+                  <span class="en-text">Cosmopolitan</span>
+                  <span class="ru-text">Космополитен</span>
+                </h4>
+                <span class="menu-item-price">₾ 18.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">არაყი, კუანტრო, ლაიმის წვენი, შტოშის წვენი.</span>
+                <span class="en-text">Vodka, Cointreau liqueur, fresh lime juice, cranberry juice.</span>
+                <span class="ru-text">Водка, ликер куантро, сок лайма, клюквенный сок.</span>
+              </p>
+            </div>
+
+            <!-- TEQUILA SUNRISE -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ტეკილა სანრაიზი</span>
+                  <span class="en-text">Tequila Sunrise</span>
+                  <span class="ru-text">Текила Санрайз</span>
+                </h4>
+                <span class="menu-item-price">₾ 20.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ტეკილა, ფორთოხლის წვენი, გრენადინის ვაჟინი.</span>
+                <span class="en-text">Tequila, fresh orange juice, sweet grenadine syrup.</span>
+                <span class="ru-text">Текила, апельсиновый сок, сироп гренадин.</span>
+              </p>
+            </div>
+
+            <!-- AMARETTO SOUR -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ამარეტო საუერი</span>
+                  <span class="en-text">Amaretto Sour</span>
+                  <span class="ru-text">Амаретто Сауэр</span>
+                </h4>
+                <span class="menu-item-price">₾ 18.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ლიქიორი ამარეტო, ლიმონის წვენი, კვერცხის ცილა, ვაჟინი.</span>
+                <span class="en-text">Amaretto liqueur, fresh lemon juice, egg white, simple syrup.</span>
+                <span class="ru-text">Ликер Амаретто, лимонный сок, яичный белок, сахарный сироп.</span>
+              </p>
+            </div>
+
+            <!-- JÄGER ENERGY -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">იაგერ ენერჯი</span>
+                  <span class="en-text">Jäger Energy</span>
+                  <span class="ru-text">Егерь Энерджи</span>
+                </h4>
+                <span class="menu-item-price">₾ 16.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">იეგერმაისტერი და ენერგეტიკული სასმელი.</span>
+                <span class="en-text">Jägermeister herbal shot mixed with Red Bull energy.</span>
+                <span class="ru-text">Травяной ликер Егермейстер с энергетиком Red Bull.</span>
+              </p>
+            </div>
+
+            <!-- GIN TONIC -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ჯინ ტონიკი</span>
+                  <span class="en-text">Gin & Tonic</span>
+                  <span class="ru-text">Джин Тоник</span>
+                </h4>
+                <span class="menu-item-price">₾ 16.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ჯინი, ტონიკი, ლაიმის ნაჭერი.</span>
+                <span class="en-text">Classic gin, tonic water, fresh slice of lime.</span>
+                <span class="ru-text">Классический джин, тоник, свежая долька лайма.</span>
+              </p>
+            </div>
+
+            <!-- WHISKEY COLA -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ვისკი კოლა</span>
+                  <span class="en-text">Whiskey & Cola</span>
+                  <span class="ru-text">Виски Кола</span>
+                </h4>
+                <span class="menu-item-price">₾ 17.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ვისკი, კოკა-კოლა, ყინული.</span>
+                <span class="en-text">House blended whiskey, Coca-Cola, ice.</span>
+                <span class="ru-text">Купажированный виски, кока-колай, лед.</span>
+              </p>
+            </div>
+
+            <!-- OTHER COCKTAILS -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">სკრიუდრაივერი / შტროჰ კოლ</span>
+                  <span class="en-text">Screwdriver / Stroh & Cola</span>
+                  <span class="ru-text">Отвертка / Штрох Кола</span>
+                </h4>
+                <span class="menu-item-price">₾ 14.00 / 12.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">სკრიუდრაივერი არაყითა და წვენით (14.00), ან შტროჰის რომი კოლათი (12.00).</span>
+                <span class="en-text">Vodka & orange juice Screwdriver (14.00) or Austrian Stroh rum with Coca-Cola (12.00).</span>
+                <span class="ru-text">Отвертка с водкой и соком (14.00) или крепкий ром Штрох с кока-колой (12.00).</span>
+              </p>
+            </div>
+
+            <!-- LIQUEURS SHOTS -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ლიქიორები (იაგერი, ბეილისი, ამარეტო, კუანტრო)</span>
+                  <span class="en-text">Premium Liqueur Shots</span>
+                  <span class="ru-text">Импортные Ликеры</span>
+                </h4>
+                <span class="menu-item-price">₾ 8.00 - 10.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">იეგერმაისტერი (8.00), ბეილისი (9.00), ამარეტო (10.00), კუანტრო (10.00).</span>
+                <span class="en-text">Jägermeister (8.00), Baileys (9.00), Amaretto (10.00), Cointreau (10.00).</span>
+                <span class="ru-text">Егермейстер (8.00), Бейлис (9.00), Амаретто (10.00), Куантро (10.00) (за шот).</span>
+              </p>
+            </div>
+
+            <!-- VERMOUTHS -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">მარტინი (ბიანკო / როსო)</span>
+                  <span class="en-text">Martini Vermouth (Bianco / Rosso)</span>
+                  <span class="ru-text">Мартини (Бьянко / Россо)</span>
+                </h4>
+                <span class="menu-item-price">₾ 10.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">იტალიური ვერმუტი მარტინი ბიანკო ან მარტინი როსო ჭიქით (100მლ).</span>
+                <span class="en-text">Italian Martini vermouth - sweet white Bianco or dark Rosso (Per Glass).</span>
+                <span class="ru-text">Классический вермут Мартини Бьянко или Россо (порция 100 мл).</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Category 3: Strong Spirits & Vodka -->
+          <div class="menu-subcategory-title">
+            <span class="ge-text">ძლიერი ალკოჰოლი & არაყი</span>
+            <span class="en-text">Strong Spirits & Vodka</span>
+            <span class="ru-text">Крепкие Напитки & Водка</span>
+          </div>
+          <div class="menu-grid">
+            <!-- CLASSIC VODKA BOTTLES -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">არაყი (სტოლიჩნაია / აბსოლუტი)</span>
+                  <span class="en-text">Vodka Bottles (Stolichnaya / Absolut)</span>
+                  <span class="ru-text">Водка (Столичная / Абсолют)</span>
+                </h4>
+                <span class="menu-item-price">₾ 40.00 - 80.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">სტოლიჩნაია 0.5L (45.00) / 1L (80.00). აბსოლუტი 0.5L (40.00) / 1L (70.00).</span>
+                <span class="en-text">Stolichnaya 0.5L (45.00) / 1L (80.00). Absolut 0.5L (40.00) / 1L (70.00).</span>
+                <span class="ru-text">Бутылка Столичной 0.5л (45.00) / 1л (80.00). Абсолют 0.5л (40.00) / 1л (70.00).</span>
+              </p>
+            </div>
+
+            <!-- FINLANDIA -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">არაყი ფინლანდია</span>
+                  <span class="en-text">Finlandia Vodka</span>
+                  <span class="ru-text">Водка Финляндия</span>
+                </h4>
+                <span class="menu-item-price">₾ 5.00 / 35.00 / 65.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ფინური პრემიუმ არაყი - ჭიქა 50მლ (5.00) / ბოთლი 0.5L (35.00) / 1L (65.00).</span>
+                <span class="en-text">Premium Finnish vodka - Shot 50ml (5.00) / 0.5L (35.00) / 1L (65.00).</span>
+                <span class="ru-text">Премиальная финская водка - порция 50мл (5.00) / 0.5л (35.00) / 1л (65.00).</span>
+              </p>
+            </div>
+
+            <!-- RTVELISI BRANDY -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ქართული ბრენდი „რთველისი“</span>
+                  <span class="en-text">Georgian Brandy "Rtvelisi"</span>
+                  <span class="ru-text">Грузинский бренди «Ртвелиси»</span>
+                </h4>
+                <span class="menu-item-price">₾ 6.00 - 90.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">რთველისი 3* (6.00 / 40.00), რთველისი 5* (8.00 / 55.00), რთველისი VSOP (12.00 / 90.00).</span>
+                <span class="en-text">Rtvelisi 3* (6.00/40.00), Rtvelisi 5* (8.00/55.00), Rtvelisi VSOP (12.00/90.00) (Shot/0.5L Bottle).</span>
+                <span class="ru-text">Ртвелиси 3* (6.00/40.00), 5* (8.00/55.00), VSOP (12.00/90.00) (порция / бутылка 0.5л).</span>
+              </p>
+            </div>
+
+            <!-- PREMIUM WHISKEY -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ვისკი (ჯეკ დენიელსი, ჩივასი, ჯეიმსონი)</span>
+                  <span class="en-text">Premium Whiskey Shots</span>
+                  <span class="ru-text">Премиум Виски (Джекс, Чивас, Джеймсон)</span>
+                </h4>
+                <span class="menu-item-price">₾ 11.00 - 12.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ჯეკ დენიელსი (12.00), ჩივას რეგალი (12.00), ჯეიმსონი (11.00) (50მლ ჭიქით).</span>
+                <span class="en-text">Jack Daniel's (12.00), Chivas Regal (12.00), Jameson (11.00) (Per 50ml Shot).</span>
+                <span class="ru-text">Джек Дэниэлс (12.00), Чивас Ригал (12.00), Джеймсон (11.00) (за стопку 50мл).</span>
+              </p>
+            </div>
+
+            <!-- TEQUILA, RUM & GIN -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ტეკილა, რომი & ჯინი (ოლმეგა, ბაკარდი, ბიფიტერი, ბომბეი)</span>
+                  <span class="en-text">Tequila, Rum & Gin Shots</span>
+                  <span class="ru-text">Текила, Ром & Джин (Ольмека, Бакарди, Бифитер, Бомбей)</span>
+                </h4>
+                <span class="menu-item-price">₾ 8.00 - 11.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ოლმეგა თეთრი/გოლდი (8.00), ბაკარდი/კაპიტანი (9.00), ბიფიტერი (10.00), ბომბეი (11.00).</span>
+                <span class="en-text">Olmeca Blanco/Gold (8.00), Bacardi/Captain Morgan (9.00), Beefeater (10.00), Bombay (11.00).</span>
+                <span class="ru-text">Ольмека Бланко/Голд (8.00), Бакарди/Капитан Морган (9.00), Бифитер (10.00), Бомбей (11.00).</span>
+              </p>
+            </div>
+
+            <!-- HOMEMADE CHACHA -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ოჯახის ჭაჭა (კლასიკური / თაფლის)</span>
+                  <span class="en-text">Homemade Georgian Chacha</span>
+                  <span class="ru-text">Домашняя грузинская чача</span>
+                </h4>
+                <span class="menu-item-price">₾ 2.00 - 55.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ოჯახის ჭაჭა (2.00/18.00), კლასიკური ჭაჭა (6.00/45.00), თაფლის ჭაჭა (8.00/55.00) (ჭიქა/ბოთლი).</span>
+                <span class="en-text">Homemade Chacha (2.00/18.00), Classic (6.00/45.00), Honey-infused (8.00/55.00) (Shot/0.5L Bottle).</span>
+                <span class="ru-text">Домашняя чача (2.00/18.00), классическая (6.00/45.00), медовая чача (8.00/55.00) (порция/бутылка).</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Strong Spirit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Drinks & Coffee -->
+          <div class="menu-subcategory-title">
+            <span class="ge-text">გამაგრილებელი სასმელები & ყავა</span>
+            <span class="en-text">Soft Drinks & Coffee</span>
+            <span class="ru-text">Безалкогольные Напитки & Кофе</span>
+          </div>
+          <div class="menu-grid">
+            <!-- COFFEE VARIETIES -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ყავა (კაპუჩინო, ლატე, ამერიკანო, ესპრესო)</span>
+                  <span class="en-text">Fresh Hot & Iced Coffee</span>
+                  <span class="ru-text">Кофе (Капучино, Латте, Американо, Эспрессо)</span>
+                </h4>
+                <span class="menu-item-price">₾ 3.00 - 9.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ესპრესო/ამერიკანო (4.00), კაპუჩინო/ლატე (6.00), თურქული (3.00), ცივი ნაყინით (9.00).</span>
+                <span class="en-text">Espresso/Americano (4.00), Cappuccino/Latte (6.00), Iced with Ice Cream (9.00), Turkish (3.00).</span>
+                <span class="ru-text">Эспрессо/Американо (4.00), Капучино/Латте (6.00), кофе по-турецки (3.00), холодный с мороженым (9.00).</span>
+              </p>
+            </div>
+
+            <!-- HOT CHOCOLATE & TEA -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ცხელი სასმელები (ჩაი / ცხელი შოკოლადი)</span>
+                  <span class="en-text">Hot Chocolate & Teas</span>
+                  <span class="ru-text">Горячие напитки (Чай / Горячий шоколад)</span>
+                </h4>
+                <span class="menu-item-price">₾ 3.00 - 12.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ჩაი ჭიქით (3.00), დასაყენებელი ჩაი ჩაიდნით (12.00), ცხელი ნოყიერი შოკოლადი (12.00).</span>
+                <span class="en-text">Cup of Tea (3.00), Brewed Teapot (12.00), Rich and thick Hot Chocolate (12.00).</span>
+                <span class="ru-text">Чашка чая (3.00), заварной чай в чайнике (12.00), плотный горячий шоколад (12.00).</span>
+              </p>
+            </div>
+
+            <!-- SIGNATURE LEMONADES -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">საფირმო ლიმონათი</span>
+                  <span class="en-text">Signature House Lemonade</span>
+                  <span class="ru-text">Фирменный домашний лимонад</span>
+                </h4>
+                <span class="menu-item-price">₾ 7.00 / 12.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ახლად გამოწურული საფირმო ხილის ლიმონათი პიტნით - ჭიქით (7.00) ან 1L დოქით (12.00).</span>
+                <span class="en-text">Freshly squeezed fruit lemonade with mint - glass (7.00) or large 1L pitcher (12.00).</span>
+                <span class="ru-text">Свежеприготовленный фруктовый лимонад с мятой - стакан (7.00) или кувшин 1 л (12.00).</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Refresher</span>
+              </div>
+            </div>
+
+            <!-- JUICES & COCA COLA -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ხილის წვენები & გაზიანი</span>
+                  <span class="en-text">Fruit Juices & Sodas</span>
+                  <span class="ru-text">Соки & Газированные напитки</span>
+                </h4>
+                <span class="menu-item-price">₾ 3.00 - 12.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">წვენი ჭიქით (6.00) / 1L დოქით (12.00). კოკა-კოლა (3.00). ლიმონათი ბოთლით (3.50).</span>
+                <span class="en-text">Juice - glass (6.00) / 1L (12.00). Coca-Cola (3.00). Bottled Lemonade (3.50).</span>
+                <span class="ru-text">Сок - стакан (6.00) / 1 л (12.00). Кока-кола (3.00). Лимонад в бутылке (3.50).</span>
+              </p>
+            </div>
+
+            <!-- MILKSHAKES -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">მილქშეიქები (ვანილი / შოკოლადი)</span>
+                  <span class="en-text">Milkshakes (Vanilla / Chocolate)</span>
+                  <span class="ru-text">Молочные коктейли (Ваниль / Шоколад)</span>
+                </h4>
+                <span class="menu-item-price">₾ 12.00 / 14.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">სქელი რძიანი კოქტეილები - ვანილით (12.00) ან ნამდვილი შოკოლადით (14.00).</span>
+                <span class="en-text">Rich and creamy thick milkshakes - Vanilla (12.00) or premium double Chocolate (14.00).</span>
+                <span class="ru-text">Густые и сливочные молочные коктейли - ванильный (12.00) или шоколадный (14.00).</span>
+              </p>
+            </div>
+
+            <!-- MINERAL WATERS -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">წყალი & მინერალური წყალი</span>
+                  <span class="en-text">Spring & Mineral Waters</span>
+                  <span class="ru-text">Вода & Минеральная вода</span>
+                </h4>
+                <span class="menu-item-price">₾ 2.50 / 3.50</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">წყალი 0.5L (2.50), ქართული ნატურალური მინერალური წყალი ბოთლით (3.50).</span>
+                <span class="en-text">Natural spring water (2.50) or traditional bottled mineral water (3.50).</span>
+                <span class="ru-text">Родниковая вода (2.50) или традиционная грузинская минеральная вода (3.50).</span>
+              </p>
+            </div>
+          </div>
+
+        </div>iv class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ოჯახის ჭაჭა (კლასიკური / თაფლის)</span>
+                  <span class="en-text">Homemade Georgian Chacha</span>
+                </h4>
+                <span class="menu-item-price">₾ 2.00 - 55.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ოჯახის ჭაჭა (2.00/18.00), კლასიკური ჭაჭა (6.00/45.00), თაფლის ჭაჭა (8.00/55.00) (ჭიქა/ბოთლი).</span>
+                <span class="en-text">Homemade Chacha (2.00/18.00), Classic (6.00/45.00), Honey-infused (8.00/55.00) (Shot/0.5L Bottle).</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Strong Spirit</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Drinks & Coffee -->
+          <div class="menu-subcategory-title">
+            <span class="ge-text">გამაგრილებელი სასმელები & ყავა</span>
+            <span class="en-text">Soft Drinks & Coffee</span>
+            <span class="ru-text">Безалкогольные напитки & Кофе</span>
+          </div>
+          <div class="menu-grid">
+            <!-- COFFEE VARIETIES -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ყავა (კაპუჩინო, ლატე, ამერიკანო, ესპრესო)</span>
+                  <span class="en-text">Fresh Hot & Iced Coffee</span>
+                  <span class="ru-text">Кофе (Капучино, Латте, Американо, Эспрессо)</span>
+                </h4>
+                <span class="menu-item-price">₾ 3.00 - 9.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ესპრესო/ამერიკანო (4.00), კაპუჩინო/ლატე (6.00), თურქული (3.00), ცივი ნაყინით (9.00).</span>
+                <span class="en-text">Espresso/Americano (4.00), Cappuccino/Latte (6.00), Iced with Ice Cream (9.00), Turkish (3.00).</span>
+                <span class="ru-text">Эспрессо/Американо (4.00), Капучино/Латте (6.00), по-турецки (3.00), холодный с мороженым (9.00).</span>
+              </p>
+            </div>
+
+            <!-- HOT CHOCOLATE & TEA -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ცხელი სასმელები (ჩაი / ცხელი შოკოლადი)</span>
+                  <span class="en-text">Hot Chocolate & Teas</span>
+                  <span class="ru-text">Горячие напитки (Чай / Горячий шоколад)</span>
+                </h4>
+                <span class="menu-item-price">₾ 3.00 - 12.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ჩაი ჭიქით (3.00), დასაყენებელი ჩაი ჩაიდნით (12.00), ცხელი ნოყიერი შოკოლადი (12.00).</span>
+                <span class="en-text">Cup of Tea (3.00), Brewed Teapot (12.00), Rich and thick Hot Chocolate (12.00).</span>
+                <span class="ru-text">Чашка чая (3.00), заварной чай в чайнике (12.00), плотный горячий шоколад (12.00).</span>
+              </p>
+            </div>
+
+            <!-- SIGNATURE LEMONADES -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">საფირმო ლიმონათი</span>
+                  <span class="en-text">Signature House Lemonade</span>
+                  <span class="ru-text">Фирменный домашний лимонад</span>
+                </h4>
+                <span class="menu-item-price">₾ 7.00 / 12.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ახლად გამოწურული საფირმო ხილის ლიმონათი პიტნით - ჭიქით (7.00) ან 1L დოქით (12.00).</span>
+                <span class="en-text">Freshly squeezed fruit lemonade with mint - glass (7.00) or large 1L pitcher (12.00).</span>
+                <span class="ru-text">Свежеприготовленный фруктовый лимонад с мятой - стакан (7.00) или кувшин 1 л (12.00).</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Refresher</span>
+              </div>
+            </div>
+
+            <!-- JUICES & COCA COLA -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ხილის წვენები & გაზიანი</span>
+                  <span class="en-text">Fruit Juices & Sodas</span>
+                  <span class="ru-text">Соки & Газированные напитки</span>
+                </h4>
+                <span class="menu-item-price">₾ 3.00 - 12.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">წვენი ჭიქით (6.00) / 1L დოქით (12.00). კოკა-კოლა (3.00). ლიმონათი ბოთლით (3.50).</span>
+                <span class="en-text">Juice - glass (6.00) / 1L (12.00). Coca-Cola (3.00). Bottled Lemonade (3.50).</span>
+                <span class="ru-text">Сок - стакан (6.00) / 1 л (12.00). Кока-кола (3.00). Лимонад в бутылке (3.50).</span>
+              </p>
+            </div>
+
+            <!-- MILKSHAKES -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">მილქშეიქები (ვანილი / შოკოლადი)</span>
+                  <span class="en-text">Milkshakes (Vanilla / Chocolate)</span>
+                  <span class="ru-text">Молочные коктейли (Ваниль / Шоколад)</span>
+                </h4>
+                <span class="menu-item-price">₾ 12.00 / 14.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">სქელი რძიანი კოქტეილები - ვანილით (12.00) ან ნამდვილი შოკოლადით (14.00).</span>
+                <span class="en-text">Rich and creamy thick milkshakes - Vanilla (12.00) or premium double Chocolate (14.00).</span>
+                <span class="ru-text">Густые и сливочные молочные коктейли - ванильный (12.00) или шоколадный (14.00).</span>
+              </p>
+            </div>
+
+            <!-- MINERAL WATERS -->
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">წყალი & მინერალური წყალი</span>
+                  <span class="en-text">Spring & Mineral Waters</span>
+                  <span class="ru-text">Вода & Минеральная вода</span>
+                </h4>
+                <span class="menu-item-price">₾ 2.50 / 3.50</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">წყალი 0.5L (2.50), ქართული ნატურალური მინერალური წყალი ბოთლით (3.50).</span>
+                <span class="en-text">Natural spring water (2.50) or traditional bottled mineral water (3.50).</span>
+                <span class="ru-text">Родниковая вода (2.50) или традиционная грузинская минеральная вода (3.50).</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Khinkali & Pastries -->
+        <div class="menu-panel" id="khinkali">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">პასანაურული ხინკალი (ღორის & საქონლის)</span>
+                  <span class="en-text">Pasanauri Khinkali (Pork & Beef)</span>
+                  <span class="ru-text">Пасанаурские Хинкали (свинина & говядина)</span>
+                </h4>
+                <span class="menu-item-price">₾ 1.80 <small>/ <span class="ge-text">ცალი</span><span class="en-text">piece</span><span class="ru-text">шт.</span></small></span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ხელით დაკეპილი ხორცით, სურნელოვანი მწვანილებითა და ცხელი წვენით. (მინ. 5 ცალი)</span>
+                <span class="en-text">Hand-rolled dumplings filled with chopped meat, herbs, and savory hot broth. (Min. 5 pcs)</span>
+                <span class="ru-text">Пельмени ручной лепки с рубленым мясом, зеленью и горячим бульоном. (Мин. 5 шт.)</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Must Try</span>
+                <span class="tag">Traditional</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ხინკალი მთიულური (მწვანილის გარეშე)</span>
+                  <span class="en-text">Mtiuluri Khinkali (No Herbs)</span>
+                  <span class="ru-text">Мтиулури Хинкали (без зелени)</span>
+                </h4>
+                <span class="menu-item-price">₾ 1.70 <small>/ <span class="ge-text">ცალი</span><span class="en-text">piece</span><span class="ru-text">шт.</span></small></span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">კლასიკური მთის ხინკალი მხოლოდ ხორცით, ხახვით, მარილითა და პილპილით. (მინ. 5 ცალი)</span>
+                <span class="en-text">Pure mountain style dumpling filled only with seasoned meat and rich broth. (Min. 5 pcs)</span>
+                <span class="ru-text">Классические горные хинкали только с мясом и бульоном. (Мин. 5 шт.)</span>
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">აჭარული ხაჭაპური (კვერცხით & კარაქით)</span>
+                  <span class="en-text">Adjarian Khachapuri</span>
+                  <span class="ru-text">Аджарский Хачапури (с яйцом & маслом)</span>
+                </h4>
+                <span class="menu-item-price">₾ 12.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ნავის ფორმის ცომი ბლომად გამდნარი სულგუნით, კვერცხის გულითა და კარაქით.</span>
+                <span class="en-text">Boat-shaped cheese bread filled with bubbly Sulguni cheese, raw egg yolk, and butter.</span>
+                <span class="ru-text">Хлеб в форме лодочки с сыром сулугуни, яичным желтком и маслом.</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Best Seller</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">იმერული ხაჭაპური</span>
+                  <span class="en-text">Imeretian Khachapuri</span>
+                  <span class="ru-text">Имеретинский Хачапури</span>
+                </h4>
+                <span class="menu-item-price">₾ 11.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">კლასიკური მრგვალი ხაჭაპური, სავსე ნაზი იმერული ყველით.</span>
+                <span class="en-text">Classic circular yeast dough filled with soft, local salted Imeretian cheese.</span>
+                <span class="ru-text">Классический круглый хачапури с нежным имеретинским сыром.</span>
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ლობიანი კეცზე</span>
+                  <span class="en-text">Lobiani in Clay Dish</span>
+                  <span class="ru-text">Лобиани на кеци</span>
+                </h4>
+                <span class="menu-item-price">₾ 8.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ქართულ სანელებლებში მოხარშული ლობიოს შიგთავსით გამომცხვარი კეცზე.</span>
+                <span class="en-text">Flatbread filled with spiced mashed red beans, baked inside traditional clay.</span>
+                <span class="ru-text">Традиционная лепешка с начинкой из вареной фасоли со специями, запеченная на кеци.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Meats & Grill -->
+        <div class="menu-panel" id="meats">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ღორის მწვადი იმერულად</span>
+                  <span class="en-text">Imeretian Pork Mtsvadi</span>
+                  <span class="ru-text">Шашлык из свинины по-имеретински</span>
+                </h4>
+                <span class="menu-item-price">₾ 16.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ნახშირზე შემწვარი წვნიანი ღორის ხორცი, ხახვითა და ბროწეულის მარცვლებით.</span>
+                <span class="en-text">Skewered pork shoulder grilled over hot coals, served with raw onion and pomegranate.</span>
+                <span class="ru-text">Сочный шашлык из свинины, запеченный на углях, подается с луком и гранатом.</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Hot Charcoal</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ქაბაბი სულგუნით შამფურზე</span>
+                  <span class="en-text">Lula Kebab with Sulguni</span>
+                  <span class="ru-text">Люля-кебаб с сулугуни на вертеле</span>
+                </h4>
+                <span class="menu-item-price">₾ 14.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">შერეული ხორცის ქაბაბი გამდნარი სულგუნის შიგთავსით, გახვეული თხელ ლავაშში.</span>
+                <span class="en-text">Spiced minced beef & pork kebab stuffed with melted Sulguni cheese, wrapped in lavash.</span>
+                <span class="ru-text">Кебаб из мясного фарша с начинкой из расплавленного сулугуни, завернутый в лаваш.</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Cheesy</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ღორის კანჭის მენიუ (ორზე)</span>
+                  <span class="en-text">Crispy Pork Shank for Two</span>
+                  <span class="ru-text">Свиная рулька на двоих</span>
+                </h4>
+                <span class="menu-item-price">₾ 38.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ლუდში მოხარშული და შემდეგ დაბრაწული კანჭი, მწნილის ასორტით, კარტოფილითა და მდოგვით.</span>
+                <span class="en-text">Beer-braised crispy pork knuckle, served with dynamic pickles, baked potatoes, and hot mustard.</span>
+                <span class="ru-text">Свиная рулька, сваренная в пиве и запеченная до хрустящей корочки, подается с ассорти солений, картофелем и горчицей.</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Pub Favorite</span>
+                <span class="tag">Huge Portion</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">შქმერული (ქათამი ნიორის სოუსში)</span>
+                  <span class="en-text">Shkmeruli (Garlic Chicken)</span>
+                  <span class="ru-text">Шкмерули (курица в чесночном соусе)</span>
+                </h4>
+                <span class="menu-item-price">₾ 18.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">კეცზე შემწვარი წიწილა რძე-ნივრის მდუღარე სოუსში.</span>
+                <span class="en-text">Crispy pan-fried chicken submerged in boiling, aromatic garlic and milk broth.</span>
+                <span class="ru-text">Жареный цыплёнок в кипящем чесночно-молочном соусе.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pub Snacks -->
+        <div class="menu-panel" id="snacks">
+          <div class="menu-grid">
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ნივრიანი პური სულგუნის დიპით</span>
+                  <span class="en-text">Garlic Bread with Sulguni Dip</span>
+                  <span class="ru-text">Чесночный Хлеб с соусом Сулугуни</span>
+                </h4>
+                <span class="menu-item-price">₾ 7.50</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">შებრაწული პური ნივრით და მწვანილით, ცხელი მდნარი ყველის სოუსთან ერთად.</span>
+                <span class="en-text">Toasted bread rubbed with garlic and herbs, served alongside hot melted cheese sauce.</span>
+                <span class="ru-text">Поджаренный хлеб с чесноком и травами, горячий соус из плавленого сулугуни.</span>
+              </p>
+              <div class="menu-item-tags">
+                <span class="tag">Beer Snack</span>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ქართული ყველის დაფა</span>
+                  <span class="en-text">Georgian Cheese Platter</span>
+                  <span class="ru-text">Грузинская Сырная Доска</span>
+                </h4>
+                <span class="menu-item-price">₾ 15.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">იმერული, სულგუნი, შებოლილი სულგუნი, თაფლი და ნიგოზი.</span>
+                <span class="en-text">Selection of local cheeses (Imeretian, Sulguni, Smoked Sulguni) with wild honey and walnuts.</span>
+                <span class="ru-text">Имеретинский, сулугуни, копчёный сулугуни — с мёдом и грецкими орехами.</span>
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">სულგუნი კეცზე</span>
+                  <span class="en-text">Fried Sulguni in Clay Pot</span>
+                  <span class="ru-text">Жареный Сулугуни на Кеци</span>
+                </h4>
+                <span class="menu-item-price">₾ 10.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">თიხის კეცზე შემწვარი ნოყიერი სულგუნი, პომიდვრის ნაჭრებთან ერთად.</span>
+                <span class="en-text">Rich local Sulguni cheese baked in a clay pot with fresh tomatoes till bubbly.</span>
+                <span class="ru-text">Сулугуни, запечённый на глиняной сковороде с помидорами до золотистой корочки.</span>
+              </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-header">
+                <h4 class="menu-item-title">
+                  <span class="ge-text">ფრი ქართული სუნელებით</span>
+                  <span class="en-text">Pub Fries with Local Spices</span>
+                  <span class="ru-text">Картофель Фри с Грузинскими Специями</span>
+                </h4>
+                <span class="menu-item-price">₾ 6.00</span>
+              </div>
+              <p class="menu-item-desc">
+                <span class="ge-text">ოქროსფერი კარტოფილი ფრი, შეზავებული ყვითელი ყვავილითა და ქინძით.</span>
+                <span class="en-text">Crispy golden fries seasoned with traditional blue fenugreek, coriander, and garlic.</span>
+                <span class="ru-text">Хрустящий картофель фри с голубым пажитником, кинзой и чесноком.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Events & Atmosphere Section -->
+  <section id="events" class="events-section">
+    <div class="events-bg"></div>
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="ge-text font-serif">რა ხდება პაბში?</span>
+          <span class="en-text font-serif">Weekly Events</span>
+          <span class="ru-text font-serif">События Недели</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="ge-text">შეუერთდით ჩვენს მუსიკალურ და სპორტულ საღამოებს</span>
+          <span class="en-text">Join our musical nights and sports broadcasts</span>
+          <span class="ru-text">Присоединяйтесь к нашим музыкальным и спортивным вечерам</span>
+        </p>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="events-grid">
+        <div class="event-card">
+          <div class="event-icon">
+            <i class="fa-solid fa-guitar"></i>
+          </div>
+          <div class="event-date">
+            <span class="ge-text">ყოველ პარასკევს & შაბათს</span>
+            <span class="en-text">Every Friday & Saturday</span>
+            <span class="ru-text">Каждую Пятницу & Субботу</span>
+          </div>
+          <h3 class="event-title">
+            <span class="ge-text">ცოცხალი მუსიკა</span>
+            <span class="en-text">Live Acoustic & Folk</span>
+            <span class="ru-text">Живая Музыка</span>
+          </h3>
+          <p class="event-desc">
+            <span class="ge-text">ტრადიციული ქართული ხალხური მელოდიები და თანამედროვე აკუსტიკური ქავერები ადგილობრივი მუსიკოსების შესრულებით. დასაწყისი 20:00 საათზე.</span>
+            <span class="en-text">Experience beautiful Georgian folk instruments and acoustic pop/rock covers by talented local artists. Starts at 20:00.</span>
+            <span class="ru-text">Традиционные грузинские народные мелодии и акустические каверы от местных музыкантов. Начало в 20:00.</span>
+          </p>
+        </div>
+
+        <div class="event-card active">
+          <div class="event-badge-live">LIVE</div>
+          <div class="event-icon">
+            <i class="fa-solid fa-tv"></i>
+          </div>
+          <div class="event-date">
+            <span class="ge-text">საფეხბურთო მატჩები</span>
+            <span class="en-text">Football Matchdays</span>
+            <span class="ru-text">Футбольные Матчи</span>
+          </div>
+          <h3 class="event-title">
+            <span class="ge-text">სპორტული საღამოები</span>
+            <span class="en-text">Big Screen Live Sports</span>
+            <span class="ru-text">Спорт на Большом Экране</span>
+          </h3>
+          <p class="event-desc">
+            <span class="ge-text">უყურეთ ჩემპიონთა ლიგის, ევროპის ჩემპიონატებისა და საქართველოს ნაკრების თამაშებს დიდ ეკრანზე მეგობრებთან და ცივ ლუდთან ერთად.</span>
+            <span class="en-text">Cheer for your team! We broadcast Champions League, Premier League, and Georgian National Team matches live on multiple giant screens.</span>
+            <span class="ru-text">Лига Чемпионов, Лига Европы и матчи сборной Грузии — прямая трансляция на больших экранах с холодным пивом!</span>
+          </p>
+        </div>
+
+        <div class="event-card">
+          <div class="event-icon">
+            <i class="fa-solid fa-percent"></i>
+          </div>
+          <div class="event-date">
+            <span class="ge-text">ორშაბათი - ხუთშაბათი</span>
+            <span class="en-text">Monday - Thursday</span>
+            <span class="ru-text">Понедельник - Четверг</span>
+          </div>
+          <h3 class="event-title">
+            <span class="ge-text">ბედნიერი საათები</span>
+            <span class="en-text">Happy Hour Specials</span>
+            <span class="ru-text">Счастливые Часы</span>
+          </h3>
+          <p class="event-desc">
+            <span class="ge-text">16:00-დან 19:00 საათამდე, შეუკვეთეთ 2 ჩამოსასხმელი ლუდი და მიიღეთ მესამე სრულიად უფასოდ! ასევე სპეციალური ფასები საფირმო ხინკალზე.</span>
+            <span class="en-text">Between 16:00 and 19:00, buy 2 draft beers and get the 3rd free. Enjoy special discounts on our classic beef and pork khinkali.</span>
+            <span class="ru-text">С 16:00 до 19:00 — закажите 2 бокала разливного пива и получите 3-й бесплатно! Специальные цены на хинкали.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews Mockup / Social Proof -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="ge-text font-serif">რას ამბობენ სტუმრები?</span>
+          <span class="en-text font-serif">Guest Reviews</span>
+          <span class="ru-text font-serif">Отзывы Гостей</span>
+        </h2>
+        <div class="accent-line"></div>
+      </div>
+
+      <div class="reviews-carousel" id="reviewsCarousel">
+        
+        <div class="review-card active">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            <span class="ge-text">"საუკეთესო ხინკალი ვჭამე ქუთაისში! ძალიან გემრიელი იყო და მწვადიც საოცარი აქვთ. ლუდი სულ ცივი და ახალია, მომსახურება კი ძალიან თბილი."</span>
+            <span class="en-text">"Hands down the best khinkali in Kutaisi! The pork mtsvadi was incredibly juicy, and the draft beer is served ice-cold. Very friendly staff!"</span>
+            <span class="ru-text">"Лучшие хинкали в Кутаиси! Мцвади невероятно сочный, пиво всегда ледяное, а персонал очень приветливый!"</span>
+          </p>
+          <div class="review-author">
+            <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+            <div class="author-info">
+              <h4>გიორგი კ.</h4>
+              <span>Local Guide</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            <span class="ge-text">"Amazing cozy pub. The atmosphere is fantastic, brick walls, heavy wooden tables. Folk music on Friday was magical. Pork shank (kanchi) is huge and tasty!"</span>
+            <span class="en-text">"Amazing cozy pub. The atmosphere is fantastic, brick walls, heavy wooden tables. Folk music on Friday was magical. Pork shank (kanchi) is huge and tasty!"</span>
+          </p>
+          <div class="review-author">
+            <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+            <div class="author-info">
+              <h4>Sarah M.</h4>
+              <span>Tourist from UK</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            <span class="ge-text">"ხშირად დავდივართ ფეხბურთის საყურებლად. ეკრანები დიდია, ხმა კარგია და მყუდროდ ვართ. ყველის სოუსი ნივრიან პურთან ერთად აუცილებლად უნდა გასინჯოთ!"</span>
+            <span class="en-text">"Our go-to place for watching football matches. Large screens, good sound, and cozy seating. You must try their garlic bread with hot cheese dip!"</span>
+            <span class="ru-text">"Наше любимое место для просмотра футбола. Большие экраны, хороший звук, уютно. Обязательно попробуйте чесночный хлеб с сырным соусом!"</span>
+          </p>
+          <div class="review-author">
+            <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+            <div class="author-info">
+              <h4>დავით ბ.</h4>
+              <span>Regular Customer</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="carousel-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section id="reservation" class="reservation-section">
+    <div class="container">
+      <div class="reservation-box">
+        <div class="reservation-info">
+          <h2 class="font-serif">
+            <span class="ge-text">დაჯავშნეთ მაგიდა წინასწარ</span>
+            <span class="en-text">Book a Table Online</span>
+            <span class="ru-text">Забронировать Столик</span>
+          </h2>
+          <p>
+            <span class="ge-text">დაგეგმეთ სასიამოვნო საღამო ჩვენთან. შეავსეთ ფორმა და ჩვენი ადმინისტრატორი დაგიკავშირდებათ ჯავშნის დასადასტურებლად.</span>
+            <span class="en-text">Plan your perfect evening with us. Fill out the form and our manager will contact you shortly to confirm your booking.</span>
+            <span class="ru-text">Спланируйте идеальный вечер с нами. Заполните форму и наш менеджер свяжется с вами для подтверждения.</span>
+          </p>
+          
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fa-solid fa-phone gold-glow"></i>
+              <div>
+                <strong><span class="ge-text">ტელეფონი:</span><span class="en-text">Phone:</span><span class="ru-text">Телефон:</span></strong>
+                <a href="tel:+995599123456">+995 599 12 34 56</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope gold-glow"></i>
+              <div>
+                <strong>Email:</strong>
+                <a href="mailto:info@georgianpub.ge">info@georgianpub.ge</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-clock gold-glow"></i>
+              <div>
+                <strong><span class="ge-text">სამუშაო საათები:</span><span class="en-text">Hours:</span><span class="ru-text">Часы работы:</span></strong>
+                <span>12:00 - 02:00 (<span class="ge-text">ყოველდღე</span><span class="en-text">Daily</span><span class="ru-text">Ежедневно</span>)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reservation-form-container">
+          <form id="bookingForm" class="booking-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookName">
+                  <span class="ge-text">სახელი და გვარი *</span>
+                  <span class="en-text">Full Name *</span>
+                  <span class="ru-text">Имя и Фамилия *</span>
+                </label>
+                <input type="text" id="bookName" placeholder="გიორგი / Giorgi" required>
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="bookPhone">
+                  <span class="ge-text">ტელეფონის ნომერი *</span>
+                  <span class="en-text">Phone Number *</span>
+                  <span class="ru-text">Номер Телефона *</span>
+                </label>
+                <input type="tel" id="bookPhone" placeholder="+995 599 XX XX XX" required>
+                <span class="error-msg"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookGuests">
+                  <span class="ge-text">სტუმრების რაოდენობა *</span>
+                  <span class="en-text">Number of Guests *</span>
+                  <span class="ru-text">Количество Гостей *</span>
+                </label>
+                <select id="bookGuests" required>
+                  <option value="2">2 <span class="ge-text">პერსონა</span><span class="en-text">Persons</span></option>
+                  <option value="3">3 <span class="ge-text">პერსონა</span><span class="en-text">Persons</span></option>
+                  <option value="4">4 <span class="ge-text">პერსონა</span><span class="en-text">Persons</span></option>
+                  <option value="5">5 <span class="ge-text">პერსონა</span><span class="en-text">Persons</span></option>
+                  <option value="6">6 <span class="ge-text">პერსონა</span><span class="en-text">Persons</span></option>
+                  <option value="7">7+ <span class="ge-text">პერსონა</span><span class="en-text">Persons</span></option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="bookDate">
+                  <span class="ge-text">თარიღი *</span>
+                  <span class="en-text">Date *</span>
+                  <span class="ru-text">Дата *</span>
+                </label>
+                <input type="date" id="bookDate" required>
+                <span class="error-msg"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookTime">
+                  <span class="ge-text">დრო *</span>
+                  <span class="en-text">Time *</span>
+                  <span class="ru-text">Время *</span>
+                </label>
+                <input type="time" id="bookTime" min="12:00" max="23:30" required>
+                <span class="error-msg"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="bookNotes">
+                <span class="ge-text">განსაკუთრებული მოთხოვნები (მაგ. ფანჯარასთან, ეკრანთან ახლოს)</span>
+                <span class="en-text">Special Requests (e.g., table near big screen)</span>
+                <span class="ru-text">Особые пожелания (напр. столик у экрана)</span>
+              </label>
+              <textarea id="bookNotes" rows="2" placeholder="..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+              <span class="ge-text">დაადასტურეთ ჯავშანი</span>
+              <span class="en-text">Confirm Reservation</span>
+              <span class="ru-text">Подтвердить Бронь</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map & Location Details -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="badge-address">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span class="ge-text">ლოკაცია</span>
+            <span class="en-text">Location</span>
+            <span class="ru-text">Адрес</span>
+          </div>
+          <h2 class="font-serif">
+            <span class="ge-text">მობრძანდით ჩვენთან</span>
+            <span class="en-text">Find Us in Kutaisi</span>
+            <span class="ru-text">Как нас найти</span>
+          </h2>
+          <p class="address-text">
+            <i class="fa-solid fa-location-dot gold-glow"></i>
+            <strong>
+              <span class="ge-text">რუსთაველის ქუჩა №135, ქუთაისი, საქართველო</span>
+              <span class="en-text">135 Rustaveli Street, Kutaisi, Georgia</span>
+              <span class="ru-text">ул. Руставели 135, Кутаиси, Грузия</span>
+            </strong>
+          </p>
+          <p class="contact-detail-text">
+            <span class="ge-text">მდებარეობს ქალაქის ისტორიულ უბანში. თუ ვერ გვპოულობთ, დაგვირეკეთ და სიამოვნებით მიგასწავლით გზას.</span>
+            <span class="en-text">Conveniently located on Rustaveli Street. If you have trouble finding us, call our number and we'll gladly guide you.</span>
+            <span class="ru-text">Расположен в историческом центре города. Если не можете нас найти — позвоните, мы с радостью объясним дорогу.</span>
+          </p>
+          
+          <div class="map-coordinates">
+            <span>Lat: 42.2687903</span>
+            <span>Lng: 42.7023296</span>
+          </div>
+
+          <a href="https://www.google.com/maps/place/%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%A3%E1%83%9A%E1%83%98+%E1%83%9E%E1%83%90%E1%83%91%E1%83%98+%E2%80%A2+Georgian+Pub/@42.2687942,42.6997547,810m/data=!3m2!1e3!4b1!4m6!3m5!1s0x405c8d005d7dbccf:0x43fa9d95f06354f5!8m2!3d42.2687903!4d42.7023296!16s%2Fg%2F11nb2p7b3n?entry=ttu" target="_blank" class="btn btn-outline btn-block">
+            <i class="fa-solid fa-directions"></i>
+            <span class="ge-text">მიიღეთ მიმართულება რუკაზე</span>
+            <span class="en-text">Get Directions on Google Maps</span>
+            <span class="ru-text">Проложить маршрут в Google Maps</span>
+          </a>
+        </div>
+
+        <div class="map-container">
+          <!-- Vector Map Mockup with interactive elements to look stunning and fit the design -->
+          <div class="vector-map">
+            <div class="map-grid-overlay"></div>
+            <div class="map-road-1"></div>
+            <div class="map-road-2"></div>
+            <div class="map-river">
+              <span class="river-label">Rioni River / რიონი</span>
+            </div>
+            <div class="landmark Colchis">Colchis Fountain</div>
+            <div class="landmark WhiteBridge">White Bridge</div>
+            <div class="map-pin-pulse">
+              <div class="pulse-ring"></div>
+              <div class="pin-marker">
+                <i class="fa-solid fa-beer-mugs-healthy"></i>
+              </div>
+              <div class="pin-tooltip">
+                <strong>Georgian Pub / ქართული პაბი</strong><br>
+                <span>Rustaveli St. 135</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="font-serif">ქართული პაბი • Georgian Pub</h3>
+          <p>
+            <span class="ge-text">ავთენტური გემო, მყუდრო გარემო და ტრადიციული მასპინძლობა ქუთაისში.</span>
+            <span class="en-text">Authentic taste, cozy vibes, and traditional hospitality in Kutaisi.</span>
+            <span class="ru-text">Аутентичная кухня, уютная атмосфера и традиционное гостеприимство в Кутаиси.</span>
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/qartulipub/?locale=ka_GE" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/georgianpub/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Tripadvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4 class="footer-title">
+            <span class="ge-text">ნავიგაცია</span>
+            <span class="en-text">Navigation</span>
+            <span class="ru-text">Навигация</span>
+          </h4>
+          <ul>
+            <li><a href="#home"><span class="ge-text">მთავარი</span><span class="en-text">Home</span><span class="ru-text">Главная</span></a></li>
+            <li><a href="#about"><span class="ge-text">კონცეფცია</span><span class="en-text">Concept</span><span class="ru-text">О нас</span></a></li>
+            <li><a href="#menu"><span class="ge-text">მენიუ</span><span class="en-text">Menu</span><span class="ru-text">Меню</span></a></li>
+            <li><a href="#events"><span class="ge-text">ღონისძიებები</span><span class="en-text">Events</span><span class="ru-text">События</span></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-title">
+            <span class="ge-text">საკონტაქტო</span>
+            <span class="en-text">Contact Info</span>
+            <span class="ru-text">Контакты</span>
+          </h4>
+          <p><i class="fa-solid fa-location-dot"></i> Rustaveli St. 135, Kutaisi</p>
+          <p><i class="fa-solid fa-phone"></i> +995 599 12 34 56</p>
+          <p><i class="fa-solid fa-envelope"></i> info@georgianpub.ge</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Georgian Pub Kutaisi. All Rights Reserved. 
+        </p>
+        <p class="dev-credits">
+          <span class="ge-text">დამზადებულია სიყვარულით ქუთაისისთვის</span>
+          <span class="en-text">Crafted with pride for Kutaisi's food culture</span>
+          <span class="ru-text">Создано с любовью для Кутаиси</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Business Pitch Widget (Float on bottom left) -->
+  <div class="pitch-widget" id="pitchWidget">
+    <button class="pitch-widget-toggle" id="pitchToggle" aria-label="Claim Website">
+      <i class="fa-solid fa-laptop-code"></i>
+      <span class="pulse-indicator"></span>
+    </button>
+    <div class="pitch-widget-content">
+      <h3>
+        <span class="ge-text">საიტის დემო</span>
+        <span class="en-text">Website Offer</span>
+      </h3>
+      <p>
+        <span class="ge-text">მოგწონთ ეს ვებგვერდი? შეგიძლიათ შესთავაზოთ იგი „ქართულ პაბს“ საუკეთესო პირობებით. ყველა ტექსტი, სურათი და ფუნქციონალი მზად არის დასაყენებლად.</span>
+        <span class="en-text">Like this website? Offer it to the owners of Georgian Pub! Complete code, beautiful design, bilingual translations, and working forms are fully ready for deploy.</span>
+      </p>
+      <div class="pitch-actions">
+        <button class="btn btn-primary btn-xs" id="copyCodeBtn">
+          <i class="fa-solid fa-copy"></i>
+          <span class="ge-text">კოდის კოპირება</span>
+          <span class="en-text">Copy Folder</span>
+        </button>
+        <button class="btn btn-secondary btn-xs" id="closePitchBtn">
+          <span class="ge-text">დახურვა</span>
+          <span class="en-text">Dismiss</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
