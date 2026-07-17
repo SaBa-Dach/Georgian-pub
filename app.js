@@ -1,5 +1,5 @@
 /**
- * GEORGIAN PUB KUTAISI - INTERACTIVE JAVASCRIPT
+ * GEORGIAN PUB KUTAISI - INTERACTIVE JAVASCRIPT[cite: 2]
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
-   Header Scroll Effect
+   Header Scroll Effect[cite: 2]
    ========================================================================== */
 function initHeaderScroll() {
   const header = document.querySelector('.header');
@@ -29,7 +29,7 @@ function initHeaderScroll() {
 }
 
 /* ==========================================================================
-   Mobile Menu Toggle
+   Mobile Menu Toggle[cite: 2]
    ========================================================================== */
 function initMobileMenu() {
   const mobileToggle = document.getElementById('mobileToggle');
@@ -48,6 +48,7 @@ function initMobileMenu() {
   document.addEventListener('click', (e) => {
     if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && e.target !== mobileToggle) {
       mobileToggle.classList.remove('open');
+      navMenu.classList.open = false; // Safe removal
       navMenu.classList.remove('open');
     }
   });
@@ -84,7 +85,7 @@ function initMobileMenu() {
 }
 
 /* ==========================================================================
-   Language Switcher & Translation Management
+   Language Switcher & Translation Management[cite: 2]
    ========================================================================== */
 function initLanguageSwitcher() {
   const langBtns = document.querySelectorAll('.lang-btn');
@@ -148,7 +149,7 @@ function initLanguageSwitcher() {
 }
 
 /* ==========================================================================
-   Interactive Menu Tabs
+   Interactive Menu Tabs[cite: 2]
    ========================================================================== */
 function initMenuTabs() {
   const tabBtns = document.querySelectorAll('.menu-tab-btn');
@@ -176,7 +177,7 @@ function initMenuTabs() {
 }
 
 /* ==========================================================================
-   Guest Reviews Slider / Carousel
+   Guest Reviews Slider / Carousel[cite: 2]
    ========================================================================== */
 function initReviewsCarousel() {
   const reviews = document.querySelectorAll('.review-card');
@@ -222,7 +223,7 @@ function initReviewsCarousel() {
 }
 
 /* ==========================================================================
-   Booking Form Validation & Simulated Reservation
+   Booking Form Validation & Simulated Reservation[cite: 2]
    ========================================================================== */
 function initBookingForm() {
   const form = document.getElementById('bookingForm');
@@ -249,7 +250,6 @@ function initBookingForm() {
     const phone = document.getElementById('bookPhone');
     const date = document.getElementById('bookDate');
     const time = document.getElementById('bookTime');
-    const guests = document.getElementById('bookGuests');
     
     let isValid = true;
     const isEn = document.body.classList.contains('lang-en');
@@ -263,7 +263,7 @@ function initBookingForm() {
     // Phone Validation
     const phoneRegex = /^\+?[0-9\s-]{9,15}$/;
     if (!phoneRegex.test(phone.value.trim())) {
-      showError(phone, isEn ? "Please enter a valid phone number" : "შეიყვანეთ ტელეფონის სწორი ნომერი");
+      showError(phone, isEn ? "Please enter a valid phone number" : "შეიყვანეთ ტელონის სწორი ნომერი");
       isValid = false;
     }
 
@@ -319,7 +319,7 @@ function initBookingForm() {
 }
 
 /* ==========================================================================
-   Toast Notification System
+   Toast Notification System[cite: 2]
    ========================================================================== */
 function showToast(message) {
   const container = document.getElementById('toastContainer');
@@ -350,7 +350,7 @@ function showToast(message) {
 }
 
 /* ==========================================================================
-   Pitch Widget Logic (Floating Sales Helper)
+   Pitch Widget Logic (Floating Sales Helper)[cite: 2]
    ========================================================================== */
 function initPitchWidget() {
   const widget = document.getElementById('pitchWidget');
